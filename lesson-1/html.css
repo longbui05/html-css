@@ -1,0 +1,23 @@
+:root{
+    --text-color: blue ;
+}
+h1{
+    color: var(--text-color);
+}
+
+
+.vk{
+    color:blueviolet
+}
+#ck { 
+    color: darkolivegreen;
+}
+.ckvk{
+    color: green;
+    font-size: medium;
+}
+.tft{
+    background-color: red;
+    width: 15vw;
+    height: 25vh;
+}
