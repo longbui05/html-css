@@ -1,0 +1,7 @@
+- position: absolute;
+sẽ phụ thuộc vào element có thuộc tính position gần nhất
+và có thể di chuyển xong quanh element đó
+- position: fixed;
+phuj thuộc vào cửa sổ trang web để vị trí của thanh header hay vv giữ nguyên
+
+cái sticky k hỗ trợ kbt đúng sai wtf
