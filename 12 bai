@@ -79,6 +79,96 @@
 12
 // let str = "hello";
 // for (let i = 0; i < str.length; i++) {
-//     console.log(str[i]);
+     console.log(str[i]);
 // }
+
+13
+let arr1 = [1, 2, 3, 4, 5, 6];
+let sum = 0;
+
+for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] % 2 === 0) {
+        sum += arr1[i];
+    }
+}
+console.log("Tổng số chẵn:", sum);
+
+14
+let n = 5;
+
+for (let i = 1; i <= n; i++) {
+    console.log("*".repeat(i));
+}
+
+15
+function factorial(n) {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+console.log(factorial(5));
+
+16
+function isPrime(n) {
+    if (n < 2) return false;
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) return false;
+    }
+    return true;
+}
+console.log(isPrime(7));
+console.log(isPrime(10));
+
+17
+let arr = [1, 2, 3, 4, 5, 6];
+let sum = 0;
+for (let num of arr) {
+    if (num % 2 === 0) {
+        sum += num;
+    }
+}
+console.log("Tổng chẵn:", sum);
+
+18
+let arr2 = [1, 2, 3, 4];
+
+for (let i = 0; i < arr2.length / 2; i++) {
+    let temp = arr2[i];
+    arr2[i] = arr2[arr2.length - 1 - i];
+    arr2[arr2.length - 1 - i] = temp;
+}
+
+console.log(arr2)
+
+19
+let arr3 = [1, 2, 2, 3, 3, 3, 4];
+let map = {};
+let max = 0;
+let result = null;
+
+for (let num of arr3) {
+    map[num] = (map[num] || 0) + 1;
+
+    if (map[num] > max) {
+        max = map[num];
+        result = num;
+    }
+}
+
+console.log("Xuất hiện nhiều nhất:", result);
+
+
+
+
+
+
+
+
+
+
+
+
 
